@@ -1,0 +1,17 @@
+{
+  "name": "SearchableDropDown5",
+  "type": "SearchableDropDown",
+  "subType": "Global",
+  "label": "Baseline Tag",
+  "plugin": "",
+  "static": false,
+  "star": false,
+  "query": {
+    "name": "dropDownQuery",
+    "select": [],
+    "from": "testbed_read",
+    "where": "_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunDetails AND _tagBaseline_Tag == * ",
+    "time": "Last 1 month"
+  },
+  "metricsFilter": {}
+}

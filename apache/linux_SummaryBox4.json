@@ -1,0 +1,1 @@
+{"name":"linux_SummaryBox4","type":"SummaryBox","subType":"List","size":1,"query":{"name":"query_SummaryBox4","select":["ip.term","mac.term","mtu.term"],"from":"deepinsight","where":"_plugin == linux AND _nicName == linux_DropDown1.$value AND hostname == $value","time":"Last 1 month"},"title":"NIC Details","plugin":"linux"}

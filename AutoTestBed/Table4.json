@@ -1,0 +1,52 @@
+{
+  "name": "Table4",
+  "type": "Table",
+  "size": "Full row",
+  "height": "3",
+  "title": "Test Lists",
+  "plugin": "",
+  "doubleClickEnable": true,
+  "static": true,
+  "query": {
+    "name": "tableQuery",
+    "select": [
+      "Cluster Name=clusterName.term",
+      "Result Path=resultPath.term",
+      "Model=modelNumber.term",
+      "Hypervisor=esxiVersion.term",
+      "CVM Linux Ver=cvmLinuxVer.term",
+      "Hx Version=productVersion.term"
+    ],
+    "aggregation": true,
+    "from": "testbed_read",
+    "where": "_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunDetails AND clusterName == SearchableDropDown1.$value AND modelNumber == SearchableDropDown2.$value AND productVersion == SearchableDropDown3.$value AND _tag_runId == *",
+    "time": "Last 1 month",
+    "sortOrder": "desc"
+  },
+  "pagination": false,
+  "sortable": true,
+  "titleEnable": false,
+  "metricProperties": {
+    "metricsFilter": {},
+    "color": {},
+    "decimal": {},
+    "format": {}
+  },
+  "inputFields": [
+    {
+      "tagName": "Baseline_Tag",
+      "tagDesc": "Baseline tag ",
+      "tagType": "text"
+    },
+    {
+      "tagName": "Notes",
+      "tagDesc": "Baseline tag ",
+      "tagType": "text-area"
+    },
+    {
+      "tagName": "Description",
+      "tagDesc": "Test Description",
+      "tagType": "text-area"
+    }
+  ]
+}

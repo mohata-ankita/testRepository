@@ -1,0 +1,1 @@
+{"name":"DropDown2","type":"DropDown","size":1,"label":"Log Level","plugin":"apache","query":{"name":"dropDownQuery","select":[],"from":"jan19","where":"hostname == $value AND _plugin == apache AND level == *","time":"Last 1 month"}}

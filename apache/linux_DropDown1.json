@@ -1,0 +1,1 @@
+{"name":"linux_DropDown1","type":"DropDown","size":1,"query":{"name":"query_DropDown1","select":[],"from":"deepinsight","where":"_plugin == linux AND _nicName == * AND hostname == $value AND _nicName !== aggregate","time":"Last 1 month"},"label":"NIC","plugin":"linux"}

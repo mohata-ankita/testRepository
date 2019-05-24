@@ -1,0 +1,1 @@
+{"name":"DropDown20","type":"DropDown","subType":"Local","label":"Cluster Name","plugin":"","query":{"name":"dropDownQuery","select":[],"from":"testbed_read","where":"_tag_appName == $value AND _plugin == hxatb AND _documentType == cluster AND _clusterName == * ","time":"Last 1 month"}}

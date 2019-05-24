@@ -1,0 +1,34 @@
+{
+  "name": "Table6",
+  "type": "Table",
+  "size": "Full row",
+  "height": "3",
+  "title": "Aggregated Results",
+  "plugin": "",
+  "query": {
+    "name": "tableQuery",
+    "select": [
+      "time= timestamp.term",
+      "Read %=readPercent",
+      "IOPS=rate.avg",
+      "Tput(MBps)=MBPerSec.avg",
+      "Lat(ms)=resp.avg",
+      "R_Lat(ms)=readResp.avg",
+      "W_Lat(ms)=writeResp.avg",
+      "Max Lat(ms)=respMax.max",
+      "Latency std_dev=respStd.avg"
+    ],
+    "from": "testbed_read",
+    "where": "_tag_appName == AutoTestBed AND _plugin == hxatb AND _documentType == testRunRaw AND _tag_runId == DropDown7.$value AND _tag_runName == *",
+    "time": "Last 1 month",
+    "size": 1000
+  },
+  "pagination": true,
+  "sortable": true,
+  "metricProperties": {
+    "color": {},
+    "decimal": {
+      "default": 2
+    }
+  }
+}

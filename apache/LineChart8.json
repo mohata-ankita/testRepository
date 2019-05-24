@@ -1,0 +1,1 @@
+{"name":"LineChart8","type":"LineChart","size":"One-third row","title":"Transaction Data Volume","plugin":"apache","dropdowns":[],"query":{"name":"lineChartMetric","select":["Data Volume(KB)= accessSize*1024"],"from":"deepinsight","where":"_tag_appName == $value and _tag_Name == $value AND _documentType == apache","time":"Last 1 month"}}

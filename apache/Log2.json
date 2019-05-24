@@ -1,0 +1,1 @@
+{"name":"Log2","type":"Log","size":1,"title":"Logs","plugin":"apache","uniqueLogs":true,"query":{"name":"logQuery","select":"*","from":"jan19","where":"hostname == $value AND _plugin == apache AND level == DropDown2.$value","time":"Last 1 month","start_index":0,"size":50},"pagination":true}

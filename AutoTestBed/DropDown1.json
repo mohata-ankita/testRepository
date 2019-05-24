@@ -1,0 +1,24 @@
+{
+  "name": "DropDown1",
+  "type": "DropDown",
+  "subType": "Local",
+  "label": "Run1",
+  "plugin": "",
+  "static": true,
+  "components": [
+    "Table4"
+  ],
+  "metricsFilter": {},
+  "mouseOverDetails": {
+    "query": {
+      "select": [
+        "modelNumber.term",
+        "clusterName.term",
+        "esxiVersion.term",
+        "cvmLinuxVer.term"
+      ],
+      "from": "testbed_read",
+      "where": "_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunDetails AND  _tag_runId == *"
+    }
+  }
+}
