@@ -1,0 +1,1 @@
+{"name":"LineChart4","type":"LineChart","data points":"On","size":"One-third row","query":{"name":"query_LineChart1","select":["CPUUtil","RAMUtil"],"from":"default","where":"_plugin == linux AND _tag_appName == $value and _tag_Name == $value","time":"Last 1 day","histogram":"30m"},"title":"Compute Metrics","plugin":"linux"}

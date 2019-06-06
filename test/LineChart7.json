@@ -1,0 +1,1 @@
+{"name":"LineChart7","type":"LineChart","size":"One-third row","title":"Transactions","plugin":"apache","dropdowns":[],"query":{"name":"lineChartMetric","select":["accessCount"],"from":"deepinsight","where":"_tag_appName == $value and _tag_Name == $value AND _documentType == apache","time":"Last 1 day","histogram":"30m"}}

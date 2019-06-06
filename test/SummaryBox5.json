@@ -1,0 +1,1 @@
+{"name":"SummaryBox5","type":"SummaryBox","subType":"Grid","size":1,"query":{"name":"query_SummaryBox5","select":["numQueries.term","slowQueries.term"],"from":"deepinsight","where":"_plugin == mysql AND _documentType == databaseDetails AND _dbName == DropDown1.$value AND hostname == $value","time":"Last 1 month"},"title":"Queries","plugin":"mysql"}

@@ -1,0 +1,1 @@
+{"name":"SummaryBox9","type":"SummaryBox","subType":"Grid","size":1,"title":"Apache Details","plugin":"apache","query":{"name":"summaryBoxMetric","select":["apacheVersion.term","apacheOS.term","upTime(days) = upTime/86400"],"from":"default","where":"_tag_appName == $value and _tag_Name == $value AND _plugin == apache and _documentType==apache","time":"Last 1 month"}}

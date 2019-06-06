@@ -1,0 +1,1 @@
+{"name":"LineChart2","type":"LineChart","size":"One-third row","title":"Response Time","plugin":"apache","dropdowns":[],"query":{"name":"lineChartMetric","select":["responseTime(ms)=response_time/1000"],"from":"deepinsight","where":"_tag_appName == $value and _tag_Name == $value AND _documentType == apacheAccessLogs","time":"Last 1 day","histogram":"30m"}}

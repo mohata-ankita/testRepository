@@ -1,0 +1,1 @@
+{"name":"linux_SummaryBox6","type":"SummaryBox","subType":"List","size":1,"query":{"name":"query_SummaryBox6","select":["capacity.term","usage.term","_diskType.term"],"from":"deepinsight","where":"_plugin == linux AND _diskName == linux_DropDown2.$value AND hostname == $value","time":"Last 1 month"},"title":"Disk Details","plugin":"linux"}

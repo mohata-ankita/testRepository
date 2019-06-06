@@ -1,0 +1,1 @@
+{"name":"linux_SummaryBox3","type":"SummaryBox","subType":"Grid","size":1,"query":{"name":"query_SummaryBox3","select":["rx_Rate","rx_Drops","tx_Rate","tx_Drops"],"from":"deepinsight","where":"_plugin == linux AND hostname == $value AND _nicType == aggregate","time":"Last 1 month"},"title":"Network","plugin":"linux"}

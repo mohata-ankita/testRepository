@@ -1,0 +1,1 @@
+{"name":"LineChart3","type":"LineChart","size":"Full row","title":"Log Trends","plugin":"apache","dropdowns":[],"query":{"name":"lineChartMetric","select":["level.count"],"from":"jan19","where":"hostname == $value AND _plugin == apache AND level == DropDown2.$value","time":"Last 1 month","histogram":"30s"}}

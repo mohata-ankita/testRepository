@@ -1,0 +1,1 @@
+{"name":"LineChart24","type":"LineChart","size":"One-third row","title":"Queue depth","plugin":"linux","stacked":false,"dataPoints":"Off","dropdowns":[],"query":{"name":"lineChartMetric","select":["avgQuSize"],"from":"esd","where":"_tag_appName == $value AND _tag_Name == $value AND _plugin == linux","time":"Last 1 day","histogram":"30m"}}

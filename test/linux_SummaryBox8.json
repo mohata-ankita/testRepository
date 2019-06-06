@@ -1,0 +1,1 @@
+{"name":"linux_SummaryBox8","type":"SummaryBox","subType":"List","size":1,"query":{"name":"query_SummaryBox8","select":["readLatency","writeLatency"],"from":"deepinsight","where":"_plugin == linux AND _diskName == linux_DropDown2.$value AND hostname == $value","time":"Last 1 month"},"title":"Latency","plugin":"linux"}

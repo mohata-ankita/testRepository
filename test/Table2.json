@@ -1,0 +1,1 @@
+{"name":"Table2","type":"Table","size":"One-third row","height":1,"title":"Transaction sources","plugin":"apache","query":{"name":"tableQuery","select":["host.count"],"from":"jan19","where":"hostname == $value AND _plugin == apache and host==* ","time":"Last 1 month"},"pagination":true,"sortable":true}
