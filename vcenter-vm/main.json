@@ -1,0 +1,1 @@
+{"page":{"name":"main","tabs":[{"name":"vCenter Metrics","leftPaneEnable":false,"panes":[{"name":"Summary Metrics","controlPane":false,"collapsible":true,"components":["SummaryBox9","SummaryBox10","ExcelTable1","SummaryBox11","Table2"]},{"name":"Performance Charts","controlPane":false,"collapsible":true,"components":["LineChart7","LineChart8"]}]}]}}

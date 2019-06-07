@@ -1,0 +1,1 @@
+{"name":"SummaryBox9","type":"SummaryBox","subType":"List","size":1,"title":"CPU Details","plugin":"vcenter-vm","query":{"name":"summaryBoxMetric","select":["vCPUs.term","clockUtilPeak","clockUtilAvg","usedClockPeak","usedClockAvg"],"from":"default","where":"_tag_appName == $value and _tag_Name == $value AND _plugin == vcenter-vm and _documentType == Vm","time":"Last 1 month"}}
