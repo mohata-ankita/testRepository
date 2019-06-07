@@ -1,0 +1,31 @@
+{
+  "name": "LineChart10",
+  "type": "LineChart",
+  "size": "Half row",
+  "title": "Eden Utilization",
+  "plugin": "tomcat",
+  "static": false,
+  "stacked": false,
+  "dataPoints": "Off",
+  "sideLegend": false,
+  "adaptiveInterval": true,
+  "dropdowns": [
+    {
+      "name": "d1",
+      "type": "metrics",
+      "query": "lineChartMetric"
+    }
+  ],
+  "query": {
+    "name": "lineChartMetric",
+    "select": [
+      "bfGcEden = bfGcEdenUsed *100/bfGcEdenCommitted",
+      "afGcEden = afGcEdenUsed*100/afGcEdenCommitted"
+    ],
+    "from": "snappyflow_read",
+    "where": "_tag_appName == $value AND _tag_Name == $value AND _plugin == tomcat",
+    "time": "Last 1 month",
+    "histogram": "30m"
+  },
+  "metricsFilter": {}
+}

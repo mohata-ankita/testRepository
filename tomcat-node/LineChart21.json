@@ -1,0 +1,24 @@
+{
+  "name": "LineChart21",
+  "type": "LineChart",
+  "size": "Half row",
+  "title": "Requests Rate",
+  "plugin": "tomcat",
+  "static": false,
+  "stacked": false,
+  "dataPoints": "Off",
+  "sideLegend": false,
+  "adaptiveInterval": true,
+  "dropdowns": [],
+  "query": {
+    "name": "lineChartMetric",
+    "select": [
+      "Request rate = requestCount"
+    ],
+    "from": "snappyflow_read",
+    "where": "_tag_appName == $value AND _tag_Name == $value AND _plugin == tomcat",
+    "time": "Last 1 month",
+    "histogram": "30m"
+  },
+  "metricsFilter": {}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "SummaryBox1",
+  "type": "SummaryBox",
+  "subType": "List",
+  "size": "One-third row",
+  "title": "Server Info",
+  "plugin": "tomcat",
+  "query": {
+    "name": "summaryBoxMetric",
+    "select": [
+      "version.term",
+      "upTime(hrs) = upTime.term/(1000*60*60)"
+    ],
+    "from": "snappyflow_read",
+    "where": "_tag_appName == $value AND _tag_Name == $value AND _plugin == tomcat AND _documentType == tomcatStats",
+    "time": "Last 1 month"
+  },
+  "height": 1,
+  "split": false
+}

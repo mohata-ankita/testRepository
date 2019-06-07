@@ -1,0 +1,18 @@
+{
+  "name": "LineChart25",
+  "type": "LineChart",
+  "size": "Half row",
+  "title": "Peak Processing Time",
+  "plugin": "tomcat",
+  "dropdowns": [],
+  "query": {
+    "name": "lineChartMetric",
+    "select": [
+      "Peak Processign Time = maxTime"
+    ],
+    "from": "snappyflow_read",
+    "where": "_tag_appName == $value AND _tag_Name == $value AND _documentType == requestProcessorStats and _plugin ==tomcat",
+    "time": "Last 1 day",
+    "histogram": "30m"
+  }
+}
