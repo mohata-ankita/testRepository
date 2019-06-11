@@ -1,0 +1,1 @@
+{"name":"SummaryBox1","type":"SummaryBox","subType":"List","size":"2","title":"Datacenter Information","plugin":"","query":{"name":"summaryBoxMetric","select":["_fullDCName.term","_clusterName.term","_fullClusterName.term"],"from":"default","where":"_tag_appName == $value AND _plugin == vcenter-host AND _documentType == Host","time":"Last 1 month"}}

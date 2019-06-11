@@ -1,0 +1,1 @@
+{"name":"Table1","type":"Table","size":"3:1","title":"Storage","plugin":"vcenter-host","query":{"name":"tableQuery","select":["datastoreType.term","capacity.term","freeSpace.term"],"from":"default","where":"_tag_appName == $value AND _plugin == vcenter-host AND _documentType == HostDatastore and  _datastoreName == *","time":"Last 1 month"},"pagination":true,"sortable":true}

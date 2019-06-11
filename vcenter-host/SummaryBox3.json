@@ -1,0 +1,1 @@
+{"name":"SummaryBox3","type":"SummaryBox","subType":"List","size":1,"title":"Over provisioning","plugin":"vcenter-host","query":{"name":"summaryBoxMetric","select":["CpuOverProvision","RAMOverProvision"],"from":"default","where":"_tag_appName == $value AND _plugin == vcenter-host AND _documentType == Host","time":"Last 1 month"}}

@@ -1,0 +1,1 @@
+{"name":"SummaryBox2","type":"SummaryBox","subType":"List","size":"2","title":"System Information","plugin":"","query":{"name":"summaryBoxMetric","select":["esxVer.term","cpu.term","pCores","HT.term","RAM"],"from":"default","where":"_tag_appName == $value AND _plugin == vcenter-host AND _documentType == Host","time":"Last 1 month"}}
