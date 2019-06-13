@@ -1,1 +1,0 @@
-{"name":"DropDown3","type":"DropDown","size":1,"label":"Log Level","plugin":"","query":{"name":"dropDownQuery","select":[],"from":"default","where":"_tag_appName == $value and _tag_Name == $value AND _documentType == DropDown1.$value AND level == * ","time":"Last 1 month"}}

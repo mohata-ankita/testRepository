@@ -1,1 +1,0 @@
-{"name":"LineChart13","type":"LineChart","stacked":true,"size":"One-third row","query":{"name":"query_LineChart1","select":["CpuUser","CpuSystem","CpuIoWait","CpuIdle"],"from":"esd","where":"_plugin == linux AND _tag_appName == $value and _tag_Name == $value","time":"Last 1 day","histogram":"30m"},"title":"CPU Util Breakdown","plugin":"linux"}

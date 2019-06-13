@@ -1,1 +1,0 @@
-{"name":"DropDown14","type":"DropDown","subType":"Local","label":"Run Type","plugin":"","static":false,"star":false,"query":{"name":"dropDownQuery","select":[],"from":"testbed_read","where":"_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunAggr AND _tag_runName == * ","time":"Last 1 month"}}

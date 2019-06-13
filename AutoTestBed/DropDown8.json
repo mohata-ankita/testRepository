@@ -1,1 +1,0 @@
-{"name":"DropDown8","type":"DropDown","subType":"Global","label":"Hx Version","plugin":"","static":false,"star":true,"query":{"name":"dropDownQuery","select":[],"from":"testbed_read","where":"_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunDetails AND productVersion == *","time":"Last 1 month"},"metricsFilter":{}}

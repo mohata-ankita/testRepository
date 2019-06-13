@@ -1,1 +1,0 @@
-{"name":"Table1","type":"Table","size":"One-third row","height":1,"title":"Tx by Response Code","plugin":"apache","query":{"name":"tableQuery","select":["code.count"],"from":"deepinsight","where":"_tag_appName == $value and _tag_Name == $value AND _documentType == apacheAccessLogs AND code == *","time":"Last 1 month"},"pagination":true,"sortable":true}

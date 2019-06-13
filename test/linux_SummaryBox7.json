@@ -1,1 +1,0 @@
-{"name":"linux_SummaryBox7","type":"SummaryBox","subType":"List","size":1,"query":{"name":"query_SummaryBox7","select":["readIOPS","writeIOPS","readThroughput","writeThroughput"],"from":"deepinsight","where":"_plugin == linux AND _diskName == linux_DropDown2.$value AND hostname == $value","time":"Last 1 month"},"title":"Storage","plugin":"linux"}

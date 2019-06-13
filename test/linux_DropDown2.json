@@ -1,1 +1,0 @@
-{"name":"linux_DropDown2","type":"DropDown","size":1,"query":{"name":"query_DropDown2","select":[],"from":"deepinsight","where":"_plugin == linux AND _diskName == * AND _diskName !== aggregate AND hostname == $value","time":"Last 1 month"},"label":"Volume","plugin":"linux"}

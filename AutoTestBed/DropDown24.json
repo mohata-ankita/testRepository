@@ -1,1 +1,0 @@
-{"name":"DropDown24","type":"DropDown","subType":"Local","label":"Run2","plugin":"","query":{"name":"dropDownQuery","select":[],"from":"testbed_read","where":"_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunDetails AND activeNodes == 4 AND cpuClock == 3.00GHz AND _tag_runId == *","time":"Last 1 month"}}

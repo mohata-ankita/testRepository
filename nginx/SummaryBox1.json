@@ -1,1 +1,0 @@
-{"name":"SummaryBox1","type":"SummaryBox","subType":"Grid","size":1,"title":"Nginx Details","plugin":"nginx","query":{"name":"summaryBoxMetric","select":["nginxVersion.term","nginxOS.term","upTime(days) = upTime/86400"],"from":"default","where":"_tag_appName == $value and _tag_Name == $value AND _plugin == nginx AND _documentType == serverDetails","time":"Last 1 month"}}

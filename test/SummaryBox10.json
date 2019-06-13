@@ -1,1 +1,0 @@
-{"name":"SummaryBox10","type":"SummaryBox","subType":"Grid","size":1,"title":"Server Details","plugin":"linux","query":{"name":"summaryBoxMetric","select":["CPU_Type=_CPUType.term","numCores.term"],"from":"default","where":"_tag_appName == $value and _tag_Name == $value AND _plugin == linux and _documentType==cpu_static","time":"Last 1 month"}}

@@ -1,1 +1,0 @@
-{"name":"SummaryBox11","type":"SummaryBox","subType":"List","size":1,"query":{"name":"query_SummaryBox1","select":["dbSize.term","indexSize.term"],"from":"esd","where":"_plugin == mysql AND _tag_appName == $value and _tag_Name == $value AND _documentType == serverDetails","time":"Last 1 month"},"title":"Database Server Details","plugin":"mysql"}

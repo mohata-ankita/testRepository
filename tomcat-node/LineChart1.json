@@ -1,1 +1,0 @@
-{"name":"LineChart1","type":"LineChart","size":"Half row","title":"Error Count","plugin":"tomcat","dropdowns":[],"query":{"name":"lineChartMetric","select":["errorCount"],"from":"index-test_read","where":"_tag_appName == $value AND _tag_Name == $value AND _documentType == requestProcessorStats and _plugin ==tomcat","time":"Last 1 day","histogram":"30m"}}

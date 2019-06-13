@@ -1,1 +1,0 @@
-{"name":"LineChart3","type":"LineChart","size":1,"title":"RAM Usage (%)","plugin":"vcenter-host","stacked":false,"dataPoints":"Off","dropdowns":[],"query":{"name":"lineChartMetric","select":["RAMConsumedPercentPeak"],"from":"default","where":"_tag_appName == $value AND _plugin == vcenter-host AND _documentType == Host","time":"Last 1 day","histogram":"30m"}}

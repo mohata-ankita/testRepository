@@ -1,1 +1,0 @@
-{"name":"linux_LineChart2","type":"LineChart","size":1,"query":{"name":"query_LineChart2","select":["RAMUtil"],"from":"deepinsight","where":"_plugin == linux AND hostname == $value","time":"Last 1 month","histogram":"60ms"},"title":"RAM Util","plugin":"linux"}

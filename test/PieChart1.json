@@ -1,1 +1,0 @@
-{"name":"PieChart1","type":"PieChart","size":1,"query":{"name":"query_PieChart1","select":["threadsCreated.term","threadsConnected.term","threadsCached.term","threadsRunning.term"],"from":"deepinsight","where":"_plugin == mysql AND hostname == $value AND _documentType == serverDetails","time":"Last 1 month"},"title":"","plugin":"mysql"}

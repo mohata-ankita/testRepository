@@ -1,1 +1,0 @@
-{"name":"Log1","type":"Log","size":1,"title":"Logs","plugin":"linux","uniqueLogs":true,"query":{"name":"logQuery","select":"*","from":"deepinsight","where":"_tag_appName == $value and _tag_Name == $value AND _documentType == DropDown1.$value AND level == DropDown4.$value","time":"Last 1 month","start_index":0,"size":50},"pagination":true}

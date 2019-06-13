@@ -1,1 +1,0 @@
-{"page": {"name": "main", "tabs": [{"name": "Redis Metrics", "leftPaneEnable": false, "panes": [{"name": "Redis Metrics", "controlPane": false, "static": false, "collapsible": true, "hiddenDropdowns": [], "components": ["SummaryBox6", "SummaryBox2", "PieChart1",  "LineChart5", "LineChart6", "LineChart16", "LineChart18", "LineChart17", "LineChart1"]}]}]}, "template": "redis"}

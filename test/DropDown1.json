@@ -1,1 +1,0 @@
-{"name":"DropDown1","type":"DropDown","subType":"Local","label":"Log Type","plugin":"linux","values":["syslog","apacheErrorLogs","apacheAccessLogs"],"size":null}

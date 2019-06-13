@@ -1,1 +1,0 @@
-{"name":"LineChart1","type":"LineChart","size":"One-third row","title":"Transactions","plugin":"nginx","dropdowns":[],"query":{"name":"lineChartMetric","select":["totalRequests"],"from":"deepinsight","where":"_tag_appName == $value AND _tag_Name == $value AND _documentType == serverStats","time":"Last 1 day","histogram":"30m"}}

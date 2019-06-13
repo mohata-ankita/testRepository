@@ -1,1 +1,0 @@
-{"name":"LineChart1","type":"LineChart","size":"Full row","title":"Log Trends","plugin":"","dataPoints":"On","query":{"name":"lineChartMetric","select":["level.count"],"from":"default","where":"_tag_appName == $value and _tag_Name == $value AND _documentType == DropDown1.$value AND level == DropDown3.$value","time":"Last 1 day","histogram":"30m"}}
