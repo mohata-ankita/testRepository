@@ -1,0 +1,20 @@
+{
+  "name": "DropDown28",
+  "type": "DropDown",
+  "subType": "Local",
+  "label": "Custom Build",
+  "plugin": "",
+  "static": false,
+  "star": false,
+  "query": {
+    "name": "dropDownQuery",
+    "select": [
+      "clusterName.term"
+    ],
+    "from": "testbed_read",
+    "where": "_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunDetails AND _tagBuild == custom AND productVersion == SearchableDropDown6.$value AND _tag_runId == *",
+    "time": "Last 1 month"
+  },
+  "metricsFilter": {},
+  "size": null
+}

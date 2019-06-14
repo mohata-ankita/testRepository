@@ -1,0 +1,1 @@
+{"name":"DropDown23","type":"DropDown","subType":"Local","label":"Run2","plugin":"","query":{"name":"dropDownQuery","select":[],"from":"testbed_read","where":"_tag_appName == $value AND _plugin == regression AND _documentType == vdbench AND data_type !== raw AND data_type !== aggregate AND activeNodes == 4 AND cpu_clock == 3.00GHz AND _tag_runId == *","time":"Last 1 month"}}

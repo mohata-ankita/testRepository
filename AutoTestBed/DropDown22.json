@@ -1,0 +1,1 @@
+{"name":"DropDown22","type":"DropDown","subType":"Global","label":"test","plugin":"aws-billing","static":false,"star":false,"query":{"name":"dropDownQuery","select":[],"from":"testbed_read","where":"_tag_appName == $value AND _plugin == aws-billing","time":"Last 1 month"},"metricsFilter":{}}

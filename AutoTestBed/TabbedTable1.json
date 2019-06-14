@@ -1,0 +1,71 @@
+{
+  "name": "TabbedTable1",
+  "type": "TabbedTable",
+  "size": "Full row",
+  "height": "3",
+  "title": "Cluster View",
+  "plugin": "",
+  "metricsFilter": {},
+  "query": {
+    "name": "query_TabbedTable1",
+    "query_params": [
+      {
+        "select": [
+          "Cluster Name=_clusterName.term",
+          "Cluster Path=clusterPath.term",
+          "Hx Version=productVersion.term",
+          "RF=dataReplicationFactor",
+          "Status=status.term",
+          "Model=modelNumber.term",
+          "CPU Model=cpuModel.term",
+          "Clock=cpuClock.term",
+          "AF=allFlash.term",
+          "Capacity=capacity.term",
+          "Encrypted=diskEncryption",
+          "CVM Linux Ver=cvmLinuxVer.term"
+        ],
+        "where": "_tag_appName == $value AND _documentType == cluster AND _clusterName == * "
+      },
+      {
+        "select": [
+          "Hypervisor=fullName.term",
+          "Dedup=dedup.term",
+          "Compression=compression.term",
+          "SCVM Client Version=scvmClientVersion.term"
+        ],
+        "where": "_tag_appName == $value AND _documentType == hosts AND _clusterName == *"
+      }
+    ],
+    "render": [
+      "Hardware Details.Status",
+      "Hardware Details.Model",
+      "Hardware Details.CPU Model",
+      "Hardware Details.Clock",
+      "Hardware Details.AF",
+      "Hardware Details.Capacity",
+      "Hardware Details.Encrypted",
+      "Software Details.Hypervisor",
+      "Software Details.Hx Version",
+      "Software Details.CVM Linux Ver",
+      "Software Details.SCVM Client Version",
+      "Software Details.RF",
+      "Software Details.Dedup",
+      "Software Details.Compression"
+    ],
+    "from": "testbed_read",
+    "time": "Last 1 month"
+  },
+  "sortable": true,
+  "inputFields": [
+    {
+      "tagName": "Tag",
+      "tagDesc": "tag",
+      "tagType": "text"
+    },
+    {
+      "tagName": "Notes",
+      "tagDesc": "tag",
+      "tagType": "text"
+    }
+  ]
+}

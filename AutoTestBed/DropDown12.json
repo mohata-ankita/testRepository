@@ -1,0 +1,29 @@
+{
+  "name": "DropDown12",
+  "type": "DropDown",
+  "subType": "Global",
+  "label": "Run2",
+  "plugin": "",
+  "static": false,
+  "star": false,
+  "query": {
+    "name": "dropDownQuery",
+    "select": [],
+    "from": "testbed_read",
+    "where": "_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunDetails  AND _tag_runId == *",
+    "time": "Last 1 month",
+    "sortOrder": "desc"
+  },
+  "mouseOverDetails": {
+    "query": {
+      "select": [
+        "modelNumber.term",
+        "clusterName.term",
+        "esxiVersion.term",
+        "cvmLinuxVer.term"
+      ],
+      "from": "testbed_read",
+      "where": "_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunDetails  AND _tag_runId == *"
+    }
+  }
+}

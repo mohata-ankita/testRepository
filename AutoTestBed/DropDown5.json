@@ -1,0 +1,1 @@
+{"name":"DropDown5","type":"DropDown","subType":"Global","label":"Cluster Name","plugin":"","query":{"name":"dropDownQuery","select":[],"from":"testbed","where":"_tag_appName == AutoTestBed AND _plugin == regression AND _tag_clusterName == *","time":"Last 1 month"}}

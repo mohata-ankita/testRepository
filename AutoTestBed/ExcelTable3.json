@@ -1,0 +1,44 @@
+{
+  "name": "ExcelTable3",
+  "type": "ExcelTable",
+  "size": "Half row",
+  "titleEnable": true,
+  "title": "Cluster Tags",
+  "plugin": "",
+  "static": false,
+  "query": {
+    "name": "excelTableQuery",
+    "query_params": [
+      {
+        "select": [
+          "Tag1=_tagTag.term",
+          "Notes1=_tagNotes.term"
+        ],
+        "where": "_tag_appName == $value AND _documentType == cluster AND _clusterName == DropDown10.clusterName.$value"
+      },
+      {
+        "select": [
+          "Tag2=_tagTag.term",
+          "Notes2=_tagNotes.term"
+        ],
+        "where": "_tag_appName == $value AND _documentType == cluster AND _clusterName == DropDown27.clusterName.$value"
+      }
+    ],
+    "from": "testbed_read",
+    "time": "Last 1 month"
+  },
+  "tableRows": {
+    "Tags": [
+      "Tag1",
+      "Tag2"
+    ],
+    "Notes": [
+      "Notes1",
+      "Notes2"
+    ]
+  },
+  "tableHeaders": [
+    "Run1",
+    "Run2"
+  ]
+}

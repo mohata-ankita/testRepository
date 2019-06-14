@@ -1,0 +1,19 @@
+{
+  "name": "DropDown29",
+  "type": "DropDown",
+  "subType": "Local",
+  "label": "Baseline RunID",
+  "plugin": "",
+  "static": false,
+  "star": false,
+  "query": {
+    "name": "dropDownQuery",
+    "select": [
+      "clusterName.term"
+    ],
+    "from": "testbed_read",
+    "where": "_tag_appName == $value AND _plugin == hxatb AND productVersion == SearchableDropDown6.$value  AND field_string == _tagBaseline_Tag AND _tag_runId == *",
+    "time": "Last 1 month"
+  },
+  "metricsFilter": {}
+}

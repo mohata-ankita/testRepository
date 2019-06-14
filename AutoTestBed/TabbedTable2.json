@@ -1,0 +1,56 @@
+{
+  "name": "TabbedTable2",
+  "type": "TabbedTable",
+  "size": "Full row",
+  "height": "2",
+  "title": "Test Details",
+  "plugin": "",
+  "static": false,
+  "query": {
+    "name": "query_TabbedTable2",
+    "select": [
+      "Cluster Name=clusterName.term",
+      "Result Path=resultPath.term",
+      "Model=modelNumber.term",
+      "CVM Linux Ver=cvmLinuxVer.term",
+      "Hypervisor=esxiVersion.term",
+      "Dedup=dedup.term",
+      "Compression=compression.term",
+      "allFlash.term",
+      "Encrypted=diskEncryption",
+      "RF=dataReplicationFactor",
+      "Hx Version=productVersion.term"
+    ],
+    "render": [
+      "Test Details.Cluster Name",
+      "Test Details.Result Path",
+      "Test Details.Model",
+      "Test Details.Hypervisor",
+      "Test Details.CVM Linux Ver",
+      "Test Details.Hx Version",
+      "Test Configuration.Dedup",
+      "Test Configuration.Compression",
+      "Test Configuration.allFlash",
+      "Test Configuration.Encrypted",
+      "Test Configuration.RF"
+    ],
+    "from": "testbed_read",
+    "where": "_tag_appName == $value AND _plugin == hxatb AND _documentType == testRunDetails AND clusterName == SearchableDropDown1.$value AND modelNumber == SearchableDropDown2.$value AND productVersion == SearchableDropDown3.$value AND _tag_runId == *",
+    "time": "Last 1 month",
+    "aggregation": true,
+    "sortOrder": "desc"
+  },
+  "sortable": true,
+  "inputFields": [
+    {
+      "tagName": "baselineTag",
+      "tagDesc": "baselineTag desc",
+      "tagType": "text"
+    }
+  ],
+  "metricProperties": {
+    "metricsFilter": {},
+    "color": {},
+    "decimal": {}
+  }
+}

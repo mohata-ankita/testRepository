@@ -1,0 +1,20 @@
+{
+  "name": "LineChart14",
+  "type": "LineChart",
+  "size": "One-third row",
+  "title": "Write IOPS",
+  "plugin": "",
+  "stacked": false,
+  "dataPoints": "on",
+  "sideLegend": false,
+  "query": {
+    "name": "lineChartMetric",
+    "select": [
+      "Write IOPS = rate-(rate*readPercent)/100"
+    ],
+    "from": "testbed_read",
+    "where": "_tag_appName == AutoTestBed AND _plugin == hxatb AND  _documentType == testRunAggr and _tag_clusterName==SearchableDropDown1.$value and modelNumber==SearchableDropDown2.$value and productVersion==SearchableDropDown3.$value AND _tag_runName == DropDown11.$value",
+    "time": "Last 1 day",
+    "histogram": "30m"
+  }
+}

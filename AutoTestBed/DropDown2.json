@@ -1,0 +1,1 @@
+{"name":"DropDown2","type":"DropDown","subType":"Local","label":"Run Type","plugin":"","query":{"name":"dropDownQuery","select":[],"from":"testbed","where":"_tag_appName == AutoTestBed AND _plugin == regression AND _tag_runId == DropDown1.$value AND _tag_runName == *  ","time":"Last 1 month"}}

@@ -1,0 +1,31 @@
+{
+  "name": "Table7",
+  "type": "Table",
+  "size": "Full row",
+  "height": "3",
+  "title": "Failed Data Ingestion",
+  "plugin": "hxatb",
+  "static": false,
+  "query": {
+    "name": "tableQuery",
+    "select": [
+      "Result Path=resultPath",
+      "Error Msg=message",
+      "Cluster Name=_clusterName"
+    ],
+    "from": "testbed_read",
+    "where": "_tag_appName == AutoTestBed AND _plugin == hxatb AND  _documentType == testRunParsing AND _tag_runId == *",
+    "time": "Last 1 month",
+    "aggregation": false,
+    "sortOrder": "desc"
+  },
+  "pagination": true,
+  "sortable": true,
+  "titleEnable": true,
+  "metricProperties": {
+    "metricsFilter": {},
+    "color": {},
+    "decimal": {},
+    "format": {}
+  }
+}

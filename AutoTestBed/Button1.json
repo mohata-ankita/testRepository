@@ -1,0 +1,10 @@
+{
+  "name": "Button1",
+  "type": "Button",
+  "title": "New Test",
+  "appUrl": "http://10.120.58.53:9001",
+  "buttonDesc": "schedule new test",
+  "parameters": {},
+  "label": "New Test",
+  "parent": "Table13"
+}
